@@ -20,8 +20,6 @@ for i in range(1,6):
     dict1['price']+=dict[1]
     dict1['offer']+=dict[2]
     dict1['original price']+=dict[3]
-print(len(dict1))
-print(dict1)
 with open('flipkart1.csv', 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(["Name", "Price", "Offer", "Original Price"])
